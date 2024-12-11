@@ -81,12 +81,16 @@ const Carousel = () => {
         ></div>
       </div>
 
-      <Slide
-        title={carouselItems[activeIndex].title}
-        image={carouselItems[activeIndex].image}
-        description={carouselItems[activeIndex].description}
-        buttonText={carouselItems[activeIndex].buttonText}
-      />
+      <div className="relative">
+        <div className="absolute md:top-[80%] top-[40%] md:left-[-165px] md:w-[80%] w-[130%] lg:h-[352px] md:h-[252px] h-[300px] bg-[#5267DF] transform -translate-x-[30%] -translate-y-[50%] rounded-r-full -z-10"></div>
+
+        <Slide
+          title={carouselItems[activeIndex].title}
+          image={carouselItems[activeIndex].image}
+          description={carouselItems[activeIndex].description}
+          buttonText={carouselItems[activeIndex].buttonText}
+        />
+      </div>
     </div>
   );
 };

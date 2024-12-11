@@ -3,7 +3,7 @@ import { CardsSection, Carousel, Faq, HeroBanner, Navbar } from "./components";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <HeroBanner />
       <Carousel />
