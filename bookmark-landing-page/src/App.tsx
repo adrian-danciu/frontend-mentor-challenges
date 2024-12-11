@@ -1,5 +1,12 @@
 import "./App.css";
-import { CardsSection, Carousel, Faq, HeroBanner, Navbar } from "./components";
+import {
+  CardsSection,
+  Carousel,
+  Faq,
+  HeroBanner,
+  Navbar,
+  Newsletter,
+} from "./components";
 
 function App() {
   return (
@@ -9,6 +16,7 @@ function App() {
       <Carousel />
       <CardsSection />
       <Faq />
+      <Newsletter />
     </div>
   );
 }
