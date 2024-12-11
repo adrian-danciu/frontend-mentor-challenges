@@ -8,6 +8,8 @@ https://www.frontendmentor.io/home
 This README and also the description of the repo will be updated as I upload more and more solved challenges.
 
 #1 Challenge: Bookmark Landing Page:
-    - Link to the challenge: https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158
-    - Technology used: React, Typescript, TailwindCSS
-    - Created using Vite
+    - Link to the challenge: https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158 <br>
+    - Technology used: React, Typescript, TailwindCSS <br>
+    - Created using Vite <br>
+
+![image](https://github.com/user-attachments/assets/7fcba980-a8af-466e-9f4b-cfc4bf725bb3)
