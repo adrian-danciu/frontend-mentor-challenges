@@ -20,15 +20,15 @@ const cardsConfig = [
 
 const CardsSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center mb-16 mx-8 md:mx-[165px]">
-      <p className="text-[24px] md:text-[32px] text-darkText font-medium leading-10 mb-[16px]">
+    <div className="flex flex-col justify-center items-center mb-16 mx-8 md:mx-40">
+      <p className="text-2xl md:text-3xl text-darkText font-medium leading-10 mb-4">
         Download the extension
       </p>
-      <p className="text-[15px] md:text-[18px] leading-7 font-light text-darkText opacity-50 md:mb-[48px] w-full md:w-[38%] text-center">
+      <p className="text-sm md:text-lg leading-7 font-light text-darkText opacity-50 md:mb-12 w-full md:w-5/12 text-center">
         We’ve got more browsers in the pipeline. Please do let us know if you’ve
         got a favourite you’d like us to prioritize.
       </p>
-      <div className="flex flex-col md:flex-row md:items-start items-center justify-center gap-[34px]  md:mb-[149px]">
+      <div className="flex flex-col md:flex-row md:items-start items-center justify-center gap-8  md:mb-36">
         {cardsConfig.map((card, index) => (
           <Card
             index={index}

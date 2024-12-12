@@ -5,6 +5,7 @@ import Carousel from "./Carousel/Carousel";
 import Faq from "./Faq/Faq";
 import Footer from "./Footer/Footer";
 import HeroBanner from "./HeroBanner/HeroBanner";
+import MobileNav from "./MobileNav/MobileNav";
 import Navbar from "./Navbar/Navbar";
 import Newsletter from "./Newsletter/Newsletter";
 
@@ -16,6 +17,7 @@ export {
   Faq,
   Footer,
   HeroBanner,
+  MobileNav,
   Navbar,
   Newsletter,
 };

@@ -8,13 +8,13 @@ const Footer = () => {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center font-rubik gap-[48px] md:gap-0 md:h-[88px] bg-darkText w-full pt-[40px] pb-[44px]">
-      <div className="flex flex-col md:flex-row md:gap-[65px] gap-[39px] justify-between md:ml-[165px]">
+    <div className="flex flex-col md:flex-row justify-between items-center font-rubik gap-12 md:gap-0 md:h-[88px] bg-darkText w-full pt-10 pb-10">
+      <div className="flex flex-col md:flex-row md:gap-16 gap-10 justify-between md:ml-40">
         <img src={logo} alt="logo-bookmark" />
-        <nav className="flex flex-col md:flex-row gap-[32px] md:gap-[48px] justify-between items-center">
+        <nav className="flex flex-col md:flex-row gap-8 md:gap-12 justify-between items-center">
           {navbarLinks.map((link) => (
             <a
-              className="text-white text-[13px] font-normal uppercase hover:text-customRed tracking-[2px]"
+              className="text-white text-sm font-normal uppercase hover:text-customRed"
               href={link.path}
               key={link.name}
             >
@@ -23,7 +23,7 @@ const Footer = () => {
           ))}
         </nav>
       </div>
-      <div className="flex gap-[40px] justify-between md:mr-[165px] mt-[] ">
+      <div className="flex gap-10 justify-between md:mr-40 mt-0 ">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path

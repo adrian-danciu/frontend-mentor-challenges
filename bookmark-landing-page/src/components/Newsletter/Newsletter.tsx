@@ -14,13 +14,13 @@ const Newsletter = () => {
 
   return (
     <div
-      className="bg-customBlue font-rubik text-white flex flex-col justify-center items-center pt-[54px] pb-[74px]"
+      className="bg-customBlue font-rubik text-white flex flex-col justify-center items-center pt-14 pb-20"
       id="contact"
     >
-      <p className="font-normal text-[13px] leading-[40px] tracking-[6px] mb-[24px]">
+      <p className="font-normal text-sm leading-[40px] tracking-[6px] mb-6">
         35,000+ ALREADY JOINED
       </p>
-      <p className="text-[32px] leading-[40px] font-normal mb-[36px] text-center md:w-[30%]">
+      <p className="text-3xl leading-[40px] font-normal mb-9 text-center md:w-[30%]">
         Stay up-to-date with what we’re doing
       </p>
 
@@ -28,7 +28,7 @@ const Newsletter = () => {
         className="flex flex-col md:flex-row justify-center items-center gap-4"
         onSubmit={handleValidation}
       >
-        <div className="relative w-[300px]">
+        <div className="relative w-80">
           <input
             type="text"
             placeholder="Enter your email address"
@@ -39,13 +39,10 @@ const Newsletter = () => {
             }`}
           />
           {!isValid && (
-            <img
-              className="absolute z-10 top-[14px] right-[14px]"
-              src={iconError}
-            />
+            <img className="absolute z-10 top-3 right-3" src={iconError} />
           )}
           {!isValid && (
-            <p className="absolute font-rubik text-white text-[10px] bg-red-500 mt-[-5px] w-full left-0 p-2 rounded-b-md">
+            <p className="absolute font-rubik text-white text-xs bg-red-500 mt-[-5px] w-full left-0 p-2 rounded-b-md">
               Please enter a valid email address.
             </p>
           )}

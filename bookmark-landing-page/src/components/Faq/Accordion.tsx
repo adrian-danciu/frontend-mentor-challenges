@@ -9,9 +9,9 @@ const Accordion = ({ title, description }: AccordionProps) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="md:w-[540px] w-full border-t border-b py-[19px] font-rubik">
+    <div className="md:w-[540px] w-full border-t border-b py-4 font-rubik">
       <button
-        className="w-full flex flex-row justify-between items-center text-[18px] hover:text-[#FA5959]"
+        className="w-full flex flex-row justify-between items-center text-lg hover:text-[#FA5959]"
         onClick={() => setIsOpen(!isOpen)}
       >
         {title}
@@ -34,7 +34,7 @@ const Accordion = ({ title, description }: AccordionProps) => {
           isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="mt-4 text-[16px] leading-[36px] text-darkText opacity-75">
+        <p className="mt-4 text-base leading-[36px] text-darkText opacity-75">
           {description}
         </p>
       </div>

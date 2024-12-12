@@ -1,32 +1,6 @@
 import { useState } from "react";
+import { carouselItems } from "../../constants";
 import Slide from "./Slide";
-
-const carouselItems = [
-  {
-    tab: "Simple Bookmarking",
-    title: "Bookmark in one click",
-    image: "imageTab1",
-    description:
-      "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
-    buttonText: "More Info",
-  },
-  {
-    tab: "Speedy Searching",
-    title: "Intelligent search",
-    image: "imageTab2",
-    description:
-      "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
-    buttonText: "More Info",
-  },
-  {
-    tab: "Easy Sharing",
-    title: "Share your bookmarks",
-    image: "imageTab3",
-    description:
-      "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.",
-    buttonText: "More Info",
-  },
-];
 
 const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -40,20 +14,20 @@ const Carousel = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center mb-16 mx-8 md:mx-[165px] md:mb-[149px]"
+      className="flex flex-col justify-center items-center mb-16 mx-8 md:mx-40 md:mb-36"
       id="features"
     >
-      <p className="text-[24px] md:text-[32px] text-darkText font-medium leading-10 mb-[16px]">
+      <p className="text-2xl md:text-3xl text-darkText font-medium leading-10 mb-4">
         Features
       </p>
-      <p className="text-[15px] md:text-[18px] leading-7 font-light text-darkText opacity-50 md:mb-[72px] w-full md:w-[38%] text-center">
+      <p className="text-base md:text-lg leading-7 font-light text-darkText opacity-50 md:mb-20 w-full md:w-5/12 text-center">
         Our aim is to make it quick and easy for you to access your favourite
         websites. Your bookmarks sync between your devices so you can access
         them on the go.
       </p>
 
-      <div className="relative w-full max-w-3xl mb-[72px]">
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 items-center text-center border-t md:border-t-0 md:border-b border-gray-300 pb-[31px]">
+      <div className="relative w-full max-w-3xl mb-20">
+        <div className="w-full grid grid-cols-1 md:grid-cols-3 items-center text-center border-t md:border-t-0 md:border-b border-gray-300 pb-8">
           {carouselItems.map((item, index) => (
             <button
               key={index}

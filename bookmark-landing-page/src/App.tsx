@@ -5,10 +5,10 @@ import {
   Faq,
   Footer,
   HeroBanner,
+  MobileNav,
   Navbar,
   Newsletter,
 } from "./components";
-import MobileNav from "./components/MobileNav/MobileNav";
 
 function App() {
   return (
