@@ -24,7 +24,7 @@ const Accordion = ({ title, description }: AccordionProps) => {
           <path
             fill="none"
             stroke={`${isOpen ? "#FA5959" : "#5267DF"}`}
-            stroke-width="3"
+            strokeWidth="3"
             d="M1 1l8 8 8-8"
           />
         </svg>

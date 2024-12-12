@@ -16,6 +16,7 @@ const Navbar = () => {
           <a
             className="text-darkText text-[13px] font-normal uppercase hover:text-customRed tracking-[2px]"
             href={link.path}
+            key={link.name}
           >
             {link.name}
           </a>
