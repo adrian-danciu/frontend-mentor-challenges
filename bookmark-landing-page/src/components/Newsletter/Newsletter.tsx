@@ -13,7 +13,10 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="bg-customBlue font-rubik text-white flex flex-col justify-center items-center pt-[54px] pb-[74px]">
+    <div
+      className="bg-customBlue font-rubik text-white flex flex-col justify-center items-center pt-[54px] pb-[74px]"
+      id="contact"
+    >
       <p className="font-normal text-[13px] leading-[40px] tracking-[6px] mb-[24px]">
         35,000+ ALREADY JOINED
       </p>

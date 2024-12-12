@@ -21,15 +21,15 @@ const Slide = ({ title, image, description, buttonText }: SlideProps) => {
               ? imageTab2
               : imageTab3
         }
-        alt="Main Image"
+        alt="Main I"
         className="relative z-10 w-full"
       />
 
-      <div className="flex flex-col justify-start font-rubik">
-        <p className="text-[32px] text-darkText mb-[24px] leading-[52px] tracking-[-0.15px]">
+      <div className="flex flex-col md:justify-start justify-center md:items-start items-center font-rubik">
+        <p className="text-[32px] text-darkText mb-[24px] leading-[52px] tracking-[-0.15px] md:text-left text-center">
           {title}
         </p>
-        <p className="text-[18px] leading-[28px] font-light text-darkText opacity-50 mb-[32px]">
+        <p className="text-[18px] leading-[28px] font-light text-darkText opacity-50 mb-[32px] md:text-left text-center">
           {description}
         </p>
         <div className="flex gap-[16px]">

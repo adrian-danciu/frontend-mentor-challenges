@@ -39,7 +39,10 @@ const Carousel = () => {
   const underlineWidth = `${carouselItems[0].tab.length * 10}px`;
 
   return (
-    <div className="flex flex-col justify-center items-center mb-16 mx-8 md:mx-[165px] md:mb-[149px]">
+    <div
+      className="flex flex-col justify-center items-center mb-16 mx-8 md:mx-[165px] md:mb-[149px]"
+      id="features"
+    >
       <p className="text-[24px] md:text-[32px] text-darkText font-medium leading-10 mb-[16px]">
         Features
       </p>
@@ -82,7 +85,7 @@ const Carousel = () => {
       </div>
 
       <div className="relative">
-        <div className="absolute md:top-[80%] top-[40%] md:left-[-165px] md:w-[80%] w-[130%] lg:h-[352px] md:h-[252px] h-[300px] bg-[#5267DF] transform -translate-x-[30%] -translate-y-[50%] rounded-r-full -z-10"></div>
+        <div className="absolute md:top-[80%] sm:top-[40%] top-[25%] md:left-[-165px] md:w-[80%] w-[130%] lg:h-[352px] h-[200px] bg-[#5267DF] transform -translate-x-[30%] -translate-y-[50%] rounded-r-full -z-10"></div>
 
         <Slide
           title={carouselItems[activeIndex].title}

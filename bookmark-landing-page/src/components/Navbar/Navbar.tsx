@@ -1,11 +1,6 @@
 import logo from "../../assets/logo-bookmark.svg";
+import { navbarLinks } from "../../constants";
 import Button from "../Button/Button";
-
-const navbarLinks = [
-  { name: "Features", path: "/features" },
-  { name: "Pricing", path: "/pricing" },
-  { name: "Contact", path: "/contact" },
-];
 
 const Navbar = () => {
   return (
