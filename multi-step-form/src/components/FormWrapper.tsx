@@ -28,9 +28,12 @@ const FormWrapper = () => {
 
   return (
     <div className="h-[80%] md:w-[70%] w-[100%] md:mx-auto grid md:grid-cols-4 grid-cols-1 md:grid-rows-4 md:bg-white rounded-2xl md:p-4">
-      <div className="col-span-4 md:col-span-1 md:row-span-4 row-span-1 flex md:flex-col flex-row md:justify-start justify-center relative bg-cover bg-no-repeat bg-center md:rounded-2xl bg-sidebar-mobile md:bg-sidebar-desktop">
+      <div className="col-span-4 md:col-span-1 md:row-span-4 row-span-1 flex md:flex-col flex-row md:justify-start justify-center relative bg-cover bg-no-repeat bg-center md:rounded-2xl bg-sidebar-mobile md:bg-sidebar-desktop h-[172px] md:h-auto">
         {stepsSummary.map((item, index) => (
-          <div className="flex flex-row gap-4 font-ubuntu md:px-8 px-2 pt-10">
+          <div
+            key={index}
+            className="flex flex-row gap-4 font-ubuntu md:px-8 px-2 pt-10"
+          >
             <div
               key={index}
               className={`${step === index ? "bg-lightBlue" : "bg-transparent"}
@@ -52,9 +55,11 @@ const FormWrapper = () => {
         ))}
       </div>
 
-      <div className="col-span-3 row-span-3">{renderStep()}</div>
+      <div className="md:col-span-3 md:row-span-3 md:relative md:top-0 md:ml-0 md:mr-0 md:px-0 md:py-0 col-span-2 bg-white ml-4 mr-4 px-6 py-8 absolute top-[99px] rounded-2xl">
+        {renderStep()}
+      </div>
       {!submitted && (
-        <div className="flex justify-between items-center md:px-[100px] px-4 md:mt-16 h-[72px] col-span-3 font-ubuntu md:bg-transparent w-full bg-white">
+        <div className="fixed bottom-0 flex justify-between items-center md:px-[100px] px-4 md:mt-16 h-[72px] col-span-3 font-ubuntu md:bg-transparent w-full bg-white md:relative">
           {step > 0 ? (
             <button
               onClick={prevStep}
